@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- <style>
+            body{
+                font-family:'Times New Roman', Times, serif
+            }
+        </style> -->
+    </head >
+    <body style="color:red">
+        <p id="p1">This is my first class</p>
+        <p id="p2">This my second class</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 1</h2>
+        <h3>Heading 1</h3>
+        <h4>Heading 1</h4>
+        <h5>Heading 1</h5>
+        <h6>Heading 1</h6>
+        <div class="imgvideo">
+        <img src="data:image/jpeg;base64,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">
+        </div>
+        <div class="imgvideo">
+        <video controls>
+            <source src="c:\Users\sss\Downloads\45446-443133777.mp4" type="video/mp4">
+        </video>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Ramya</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>priya</td>
+                <td>20</td>
+            </tr>
+
+        </table>
+        <ol>
+            <li>first class</li>
+            <li>second class</li>
+        </ol>
+        <ul>
+            <li>First Class</li>
+            <li>Second Class</li>
+        </ul>
+        <nav>
+            <a href="https://www.youtube.com/">Youtube</a>
+            <br>
+            <a href="https://www.meesho.com/">Meesho</a>
+        </nav>
+        <br>
+        <form>
+            <label>Email:</label>
+            <input type="email">
+            <br>
+            <label>Password:</label>
+            <input type="password">
+            <br>
+            <label>Gender:</label>
+            <br>
+            <input type="radio" name="gender">
+            <label>Male</label><br>
+            <input type="radio" name="gender">
+            <label>Female</label><br>
+            <br>
+            <label>Event Type:</label>
+            <select>
+                <option>Festival</option>
+                <option>Birthday</option>
+                <option>Other</option>
+            </select>
+            <br>
+            <label>Hobbies:</label>
+            <br>
+            <input type="checkbox" name="hobbies">
+            <label>Dancing</label><br>
+            <input type="checkbox" name="hobbies">
+            <label>Singing</label><br>
+            <br>
+            <textarea rows="4" cols="3"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="grid">
+            <div id="one">1</div>
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+        </div>
+        <div class="festivals">
+            <div id="festival1">
+                <img src="pexels-rahimegul-37265818.jpg">
+            </div>
+            <div id="festival2">
+                 <img src="pexels-nicole-avagliano-1132392-13316247.jpg">
+            </div>
+            <div id="festival3">
+                 <img src="pexels-daniel-adam-clark-975371669-20363852.jpg">
+            </div>
+            <div id="festival4">
+                 <img src="pexels-a-r-2157678326-35184453.jpg">
+            </div>
+        </div>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row">
+    <div class="col-8">col-8</div>
+    <div class="col-4">col-4</div>
+  </div>
+</div>
+    </body>    
+</html>

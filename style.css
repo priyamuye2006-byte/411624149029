@@ -1,0 +1,140 @@
+/* p{
+    font-size:xx-large;
+    font-weight: bolder;
+} */
+h1{
+    padding:20px;
+    border:20px dotted yellowgreen;
+    margin:20px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: aliceblue;
+   
+}
+video{
+    height:"auto";
+    width: 500px;
+}
+.imgvideo{
+    background-color: bisque;
+    padding:50px;
+}
+#p1{
+    font-size: 600;
+    font-style: italic;
+}
+#p2{
+    font-size:x-large;
+    font-style: normal;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-type: none;
+}
+table,td,th{
+    border:1px dashed darkcyan;
+    border-collapse: collapse;
+}
+th{
+    background-color: rgb(174, 212, 215);
+}
+button{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background-color: aquamarine;
+}
+h1:hover{
+    color:black;
+}
+form{
+    height:400px;
+    width:200px;
+    background-color: darkseagreen;
+    padding:50px;
+    margin:20px;
+    border-radius: 100px;
+}
+.grid{
+    display:grid;
+    width:100px;
+    grid-template-columns:33% 33% 33%;
+}
+#one{
+    grid-row:1/2;
+    background-color:beige;
+}
+#two{
+    grid-row:1/2;
+    background-color:azure;
+}
+#three{
+    grid-row:1/2;
+    background-color:aqua;
+}
+#four{
+    grid-row:2/3;
+    background-color:pink;
+}
+#five{
+     grid-row:2/3;
+     background-color:blue;
+}
+#six{
+     grid-row:2/3;
+     background-color:brown;
+}
+.festival{
+    display:grid;
+    grid-template-colums:50% 50%;
+
+}
+img{
+    /* desktop first */
+        height:500px;
+        width:500px;
+}
+/* mobile first */
+media(min-width:600px){
+    img{
+        height:auto;
+        width:100%;
+    }
+} 
+media(max-width:600px){
+    img{
+        height:auto;
+        width:100%;
+        background-color:green;
+        padding:100px;
+    }
+}
+/* Desktop */
+media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction:row;
+        gap:50px;
+    }
+}
+nav{
+    display:flex;
+    flex-direction: column;
+}
+.grid{
+    display:grid;
+    width:100px;
+    grid-template-columns:33% 33% 33%;
+}
