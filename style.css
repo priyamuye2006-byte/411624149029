@@ -1,140 +1,181 @@
-/* p{
-    font-size:xx-large;
+/* Paragraph Styling */
+/*
+p{
+    font-size: xx-large;
     font-weight: bolder;
-} */
+}
+*/
+
 h1{
-    padding:20px;
-    border:20px dotted yellowgreen;
-    margin:20px;
+    padding: 20px;
+    border: 20px dotted yellowgreen;
+    margin: 20px;
 }
+
+h1:hover{
+    color: black;
+}
+
+/* Images */
 img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     background-color: aliceblue;
-   
 }
+
+/* Video */
 video{
-    height:"auto";
     width: 500px;
+    height: auto;
 }
+
+/* Image & Video Container */
 .imgvideo{
     background-color: bisque;
-    padding:50px;
+    padding: 50px;
 }
+
+/* Paragraphs */
 #p1{
-    font-size: 600;
+    font-size: 20px;
+    font-weight: 600;
     font-style: italic;
 }
+
 #p2{
-    font-size:x-large;
+    font-size: x-large;
     font-style: normal;
 }
+
+/* Navigation */
 nav{
-    display:flex;
+    display: flex;
     flex-direction: row;
     gap: 20px;
 }
+
+/* Lists */
 ol{
     list-style-type: upper-roman;
 }
+
 ul{
     list-style-type: none;
 }
-table,td,th{
-    border:1px dashed darkcyan;
+
+/* Table */
+table,
+td,
+th{
+    border: 1px dashed darkcyan;
     border-collapse: collapse;
 }
+
 th{
     background-color: rgb(174, 212, 215);
 }
+
+/* Buttons */
 button{
     background-color: cornflowerblue;
     border-radius: 10px;
     padding: 10px;
 }
+
 button:hover{
     background-color: aquamarine;
 }
-h1:hover{
-    color:black;
-}
-form{
-    height:400px;
-    width:200px;
-    background-color: darkseagreen;
-    padding:50px;
-    margin:20px;
-    border-radius: 100px;
-}
-.grid{
-    display:grid;
-    width:100px;
-    grid-template-columns:33% 33% 33%;
-}
-#one{
-    grid-row:1/2;
-    background-color:beige;
-}
-#two{
-    grid-row:1/2;
-    background-color:azure;
-}
-#three{
-    grid-row:1/2;
-    background-color:aqua;
-}
-#four{
-    grid-row:2/3;
-    background-color:pink;
-}
-#five{
-     grid-row:2/3;
-     background-color:blue;
-}
-#six{
-     grid-row:2/3;
-     background-color:brown;
-}
-.festival{
-    display:grid;
-    grid-template-colums:50% 50%;
 
+/* Form */
+form{
+    width: 300px;
+    background-color: darkseagreen;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
 }
-img{
-    /* desktop first */
-        height:500px;
-        width:500px;
-}
-/* mobile first */
-media(min-width:600px){
-    img{
-        height:auto;
-        width:100%;
-    }
-} 
-media(max-width:600px){
-    img{
-        height:auto;
-        width:100%;
-        background-color:green;
-        padding:100px;
-    }
-}
-/* Desktop */
-media(min-width:1024px){
-    nav{
-        display:flex;
-        flex-direction:row;
-        gap:50px;
-    }
-}
-nav{
-    display:flex;
-    flex-direction: column;
-}
+
+/* Grid */
 .grid{
-    display:grid;
-    width:100px;
-    grid-template-columns:33% 33% 33%;
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#one{
+    background-color: beige;
+}
+
+#two{
+    background-color: azure;
+}
+
+#three{
+    background-color: aqua;
+}
+
+#four{
+    background-color: pink;
+}
+
+#five{
+    background-color: blue;
+    color: white;
+}
+
+#six{
+    background-color: brown;
+    color: white;
+}
+
+/* Festivals Grid */
+.festivals{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+/* Mobile View */
+@media (max-width: 600px){
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .festivals{
+        grid-template-columns: 1fr;
+    }
+
+    video{
+        width: 100%;
+    }
+}
+
+/* Tablet and Above */
+@media (min-width: 600px){
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px){
+
+    nav{
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .festivals{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
