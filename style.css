@@ -1,10 +1,10 @@
-/* Paragraph Styling */
-/*
+Paragraph Styling */
+
 p{
     font-size: xx-large;
     font-weight: bolder;
 }
-*/
+
 
 h1{
     padding: 20px;
@@ -16,7 +16,6 @@ h1:hover{
     color: black;
 }
 
-/* Images */
 img{
     width: 100%;
     height: auto;
