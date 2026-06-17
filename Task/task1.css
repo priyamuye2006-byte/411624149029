@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+video {
+    width: 20%;
+    padding: 10px;
+    background-color: purple;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.btn {
+    border: none;
+    padding: 12px 20px;
+    margin: 20px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid div {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
